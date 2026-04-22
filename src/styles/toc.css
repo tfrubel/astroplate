@@ -1,0 +1,72 @@
+.toc {
+  @apply sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pr-2;
+  scrollbar-width: thin;
+  scrollbar-color: theme("colors.border") transparent;
+}
+
+.dark .toc {
+  scrollbar-color: theme("colors.darkmode.border") transparent;
+}
+
+.toc::-webkit-scrollbar {
+  width: 6px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-border;
+}
+
+.toc:hover::-webkit-scrollbar-thumb {
+  @apply bg-text-light;
+}
+
+.dark .toc::-webkit-scrollbar-thumb {
+  @apply bg-darkmode-border;
+}
+
+.dark .toc:hover::-webkit-scrollbar-thumb {
+  @apply bg-darkmode-text-light;
+}
+
+.toc-title {
+  @apply mb-4 text-sm font-semibold uppercase tracking-wider text-text-dark dark:text-darkmode-text-dark;
+}
+
+.toc-list {
+  @apply relative m-0 list-none border-l border-border p-0 dark:border-darkmode-border;
+}
+
+.toc-item {
+  @apply relative;
+  padding-left: var(--toc-indent, 0);
+}
+
+.toc-link {
+  @apply relative block py-1.5 pl-4 pr-2 text-sm leading-snug text-text-light transition-colors duration-300 ease-out;
+  @apply hover:text-text-dark dark:text-darkmode-text-light dark:hover:text-darkmode-text-dark;
+}
+
+.toc-marker {
+  @apply absolute left-0 top-0 h-full w-0.5 scale-y-0 bg-primary transition-transform duration-300 ease-out dark:bg-darkmode-primary;
+  transform-origin: top;
+  margin-left: -1px;
+}
+
+.toc-link.is-active {
+  @apply font-medium text-text-dark dark:text-darkmode-text-dark;
+}
+
+.toc-link.is-active .toc-marker {
+  @apply scale-y-100;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toc-link,
+  .toc-marker {
+    @apply transition-none;
+  }
+}

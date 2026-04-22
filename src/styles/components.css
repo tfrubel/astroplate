@@ -14,7 +14,7 @@
 
 /* social icons */
 .social-icons {
-  @apply space-x-4;
+  @apply flex flex-wrap items-center gap-3;
 }
 .social-icons li {
   @apply inline-block;

@@ -41,7 +41,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
 
         <div class="row">
           <!-- Left Section -->
-          <div class="lg:col-9">
+          <div class="lg:col-9 order-1 lg:order-0">
             <h1 set:html={markdownify(title)} class="h2 mb-4" />
             <ul class="mb-4">
               <li class="mr-4 inline-block">
@@ -101,8 +101,8 @@ const { title, description, author, categories, image, date, tags } = post.data;
           </div>
 
           <!-- Right Section Table Of Content Component -->
-          <aside class="lg:col-3 mt-10 lg:mt-0">
-            <TableOfContents headings={headings} />
+          <aside class="lg:col-3 order-0 lg:order-1 mt-10 lg:mt-0 mb-20">
+            <TableOfContents headings={headings} class="" />
           </aside>
         </div>
       </article>

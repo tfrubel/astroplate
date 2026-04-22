@@ -12,7 +12,7 @@ draft: false
 
 A **Git-based Headless CMS** is a content management tool that lets you create, edit, and update your website contents using a simple visual interface. It is a modern architecture that decouples content from the website's design, storing everything in a Git repository instead of a proprietary database. Every time you edit something, the CMS automatically registers it as a Git commit, saving that content as flat files (Markdown, JSON, or YAML). This makes managing content safer, more transparent, and especially friendly for teams working with modern stack.
 
-This guide is designed for web-tech enthusiasts, aspiring developers, and mid-range professionals looking to understand Git-based headless CMS architecture, its benefits, and how to choose the right solution for their projects. Whether you're building a personal blog, documentation portal, or managing content for multiple static sites, this comprehensive guide will help you make informed decisions.
+This guide is designed for web-tech enthusiasts, aspiring developers, and mid-range professionals looking to understand Git-based headless CMS architecture, its benefits, and how to choose the right solution for their projects. Whether you're building a personal blog, documentation portal, or managing content for multiple static sites, this comprehensive guide will help you make informed decisions..
 
 ## TL;DR: What you need to know
 

@@ -53,7 +53,7 @@
     vscode-html-languageservice "^5.6.2"
     vscode-uri "^3.1.0"
 
-"@astrojs/markdown-remark@7.1.0":
+"@astrojs/markdown-remark@7.1.0", "@astrojs/markdown-remark@^7.0.0":
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-7.1.0.tgz#861489717d46e300a9502da4649c4c250c530981"
   integrity sha512-P+HnCsu2js3BoTc8kFmu+E9gOcFeMdPris75g+Zl4sY8+bBRbSQV6xzcBDbZ27eE7yBGEGQoqjpChx+KJYIPYQ==
@@ -1031,6 +1031,11 @@
   resolved "https://registry.yarnpkg.com/@poppinss/exception/-/exception-1.2.3.tgz#b713855e6c9fe2110fea0949455c50828145e64a"
   integrity sha512-dCED+QRChTVatE9ibtoaxc+WkdzOSjYTKi/+uacHWIsfodVfpsueo3+DKpgU5Px8qXjgmXkSvhXvSCz3fnP9lw==
 
+"@robot-inventor/ts-utils@^0.8.3":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@robot-inventor/ts-utils/-/ts-utils-0.8.6.tgz#cd6f793c3c85be6f34fefbfe4275ee84f62918dd"
+  integrity sha512-nXLf9e0U+H/2LgHVmV8gYhC13iWUtCLD1Wg8bUX9kgqrB5celwpvfbItVEH5BEkRz/d3eeehmpnDJOQe6+DHbw==
+
 "@rolldown/pluginutils@1.0.0-rc.3":
   version "1.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.3.tgz#8a88cc92a0f741befc7bc109cb1a4c6b9408e1c5"
@@ -1696,6 +1701,17 @@ astro-auto-import@^0.5.1:
   integrity sha512-7YZKVA7LE5nLkopOM+KIHqnh6g2CfHrysj2JUXNBrC3FppHH42RSNBM7mgsEgaq2lgHVDt7hsDQIA0JKTwIN8A==
   dependencies:
     acorn "^8.15.0"
+
+astro-custom-toc@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/astro-custom-toc/-/astro-custom-toc-4.0.5.tgz#d27c1ba09486d7aed571f19380508ff9b3353d8b"
+  integrity sha512-bPXXq2Q41g/SeujOoaaM1GSYknuD5DqnZIjTHnFy8mKAFfGAy9QbPu3igw0U/ByZdKgwW7ZzLLiLb/n+N5wxYg==
+  dependencies:
+    "@astrojs/markdown-remark" "^7.0.0"
+    "@types/hast" "^3.0.4"
+    rehype-custom-toc "^1.0.0"
+    remark-comment "^1.0.0"
+    unified "^11.0.4"
 
 astro-swiper@^2.5.0:
   version "2.5.0"
@@ -2733,7 +2749,7 @@ hast-util-whitespace@^3.0.0:
   dependencies:
     "@types/hast" "^3.0.0"
 
-hastscript@^9.0.0:
+hastscript@^9.0.0, hastscript@^9.0.1:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-9.0.1.tgz#dbc84bef6051d40084342c229c451cd9dc567dff"
   integrity sha512-g7df9rMFX/SPi34tyGCyUBREQoKkapwdY/T04Qn9TDWfHhAYt4/I0gMVirzK5wEzeUqIjEB+LXC/ypb7Aqno5w==
@@ -3515,6 +3531,14 @@ micromark-factory-mdx-expression@^2.0.0:
     unist-util-position-from-estree "^2.0.0"
     vfile-message "^4.0.0"
 
+micromark-factory-space@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/micromark-factory-space/-/micromark-factory-space-1.1.0.tgz#c8f40b0640a0150751d3345ed885a080b0d15faf"
+  integrity sha512-cRzEj7c0OL4Mw2v6nwzttyOZe8XY/Z8G0rzmWQZTBi/jjwyw/U4uqKtUORXQrR5bAZZnbTI/feRV/R7hc4jQYQ==
+  dependencies:
+    micromark-util-character "^1.0.0"
+    micromark-util-types "^1.0.0"
+
 micromark-factory-space@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/micromark-factory-space/-/micromark-factory-space-2.0.1.tgz#36d0212e962b2b3121f8525fc7a3c7c029f334fc"
@@ -3542,6 +3566,14 @@ micromark-factory-whitespace@^2.0.0:
     micromark-util-character "^2.0.0"
     micromark-util-symbol "^2.0.0"
     micromark-util-types "^2.0.0"
+
+micromark-util-character@^1.0.0, micromark-util-character@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/micromark-util-character/-/micromark-util-character-1.2.0.tgz#4fedaa3646db249bc58caeb000eb3549a8ca5dcc"
+  integrity sha512-lXraTwcX3yH/vMDaFWCQJP1uIszLVebzUa3ZHdrgxr7KEU/9mL4mVgCpGbyhvNLNlauROiNUq7WN5u7ndbY6xg==
+  dependencies:
+    micromark-util-symbol "^1.0.0"
+    micromark-util-types "^1.0.0"
 
 micromark-util-character@^2.0.0:
   version "2.1.1"
@@ -3648,10 +3680,20 @@ micromark-util-subtokenize@^2.0.0:
     micromark-util-symbol "^2.0.0"
     micromark-util-types "^2.0.0"
 
+micromark-util-symbol@^1.0.0, micromark-util-symbol@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/micromark-util-symbol/-/micromark-util-symbol-1.1.0.tgz#813cd17837bdb912d069a12ebe3a44b6f7063142"
+  integrity sha512-uEjpEYY6KMs1g7QfJ2eX1SQEV+ZT4rUD3UcF6l57acZvLNK7PBZL+ty82Z1qhK1/yXIY4bdx04FKMgR0g4IAag==
+
 micromark-util-symbol@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/micromark-util-symbol/-/micromark-util-symbol-2.0.1.tgz#e5da494e8eb2b071a0d08fb34f6cefec6c0a19b8"
   integrity sha512-vs5t8Apaud9N28kgCrRUdEed4UJ+wWNvicHLPxCa9ENlYuAY31M0ETy5y1vA33YoNPDFTghEbnh6efaE8h4x0Q==
+
+micromark-util-types@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/micromark-util-types/-/micromark-util-types-1.1.0.tgz#e6676a8cae0bb86a2171c498167971886cb7e283"
+  integrity sha512-ukRBgie8TIAcacscVHSiddHjO4k/q3pnedmzMQ4iwDcK0FtFCohKOlFbaOL/mPgfnPsL3C1ZyxJa4sbWrBl3jg==
 
 micromark-util-types@^2.0.0:
   version "2.0.2"
@@ -4101,6 +4143,21 @@ regex@^6.1.0:
   dependencies:
     regex-utilities "^2.3.0"
 
+rehype-custom-toc@^1.0.0:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/rehype-custom-toc/-/rehype-custom-toc-1.0.5.tgz#a8d22f4375c1fead8a9bbc364cb0e99ae848c3ab"
+  integrity sha512-OX1ipIgaGEtqJ7T383CK0OCy62OlORjW2PRRga/304MsklhowYNUWQ8adH4mu0FQ9pcRm4vD9qbD38c2WPTFWg==
+  dependencies:
+    "@robot-inventor/ts-utils" "^0.8.3"
+    github-slugger "^2.0.0"
+    hast-util-from-html "^2.0.3"
+    hast-util-to-html "^9.0.5"
+    hast-util-to-text "^4.0.2"
+    hastscript "^9.0.1"
+    unified "^11.0.5"
+    unist-util-visit "^5.0.0"
+    unist-util-visit-parents "^6.0.2"
+
 rehype-parse@^9.0.0:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/rehype-parse/-/rehype-parse-9.0.1.tgz#9993bda129acc64c417a9d3654a7be38b2a94c20"
@@ -4154,6 +4211,15 @@ remark-collapse@^0.1.2:
   dependencies:
     mdast-util-heading-range "^2.0.1"
     mdast-util-to-string "^1.0.2"
+
+remark-comment@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/remark-comment/-/remark-comment-1.0.0.tgz#befe2fd5dde688d641542cd1206130e00b79a337"
+  integrity sha512-k8YPo5MGvl8l4gGxOH6Zk4Fa2AhDACN5eqKnKZcHDORZQS15hlnezlBHj2lqyDiqzApNmYOMTibkEJbMSKU25w==
+  dependencies:
+    micromark-factory-space "^1.0.0"
+    micromark-util-character "^1.1.0"
+    micromark-util-symbol "^1.0.1"
 
 remark-gfm@^4.0.1:
   version "4.0.1"
